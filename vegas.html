@@ -1,0 +1,49 @@
+<html>
+<head>
+<script 
+  type="text/javascript"
+  src="dist/jquery-1.11.2.min.js">
+</script>
+
+<script 
+  type="text/javascript"
+  src="dist/jquery.vegas.js">
+</script>
+
+<link 
+  rel="stylesheet" 
+  type="text/css" 
+  href="dist/jquery.vegas.css" />
+<script>
+
+$(function() {
+  $.vegas('slideshow', {
+  	delay:5000,
+  	fade:500,
+    backgrounds:[
+    { src:'dist/images/pic.png' },
+    { src:'dist/images/pic2.jpg' },
+    { src:'dist/images/pic3.jpg' },
+    { src:'dist/images/pic4.png' },
+    { src:'dist/images/pic5.ång' }
+  ],
+  preload:true,
+
+  });
+  $.vegas('overlay', {
+    src:'dist/overlays/05.png'
+  });
+});
+
+
+</script>
+</head>
+
+
+<body>
+
+<h1>test</h1>
+tekst
+
+</body>
+</html>
